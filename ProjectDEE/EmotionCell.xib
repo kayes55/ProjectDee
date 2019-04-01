@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="EmotionCell" id="YYx-9e-Buj" customClass="EmotionCell" customModule="ProjectDEE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aPi-NH-p5C">
+                        <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="kob-JZ-dl9">
+                                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="aSm-gh-ESm">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="kob-JZ-dl9" firstAttribute="leading" secondItem="aPi-NH-p5C" secondAttribute="leading" id="Nx7-KL-vMD"/>
+                            <constraint firstAttribute="bottom" secondItem="kob-JZ-dl9" secondAttribute="bottom" id="mmg-TZ-N5A"/>
+                            <constraint firstAttribute="trailing" secondItem="kob-JZ-dl9" secondAttribute="trailing" id="pIx-Jc-cDk"/>
+                            <constraint firstItem="kob-JZ-dl9" firstAttribute="top" secondItem="aPi-NH-p5C" secondAttribute="top" id="xnC-M4-vSV"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="aPi-NH-p5C" secondAttribute="bottom" id="GGp-vV-uaH"/>
+                <constraint firstItem="aPi-NH-p5C" firstAttribute="top" secondItem="YYx-9e-Buj" secondAttribute="top" id="Olk-dG-032"/>
+                <constraint firstAttribute="trailing" secondItem="aPi-NH-p5C" secondAttribute="trailing" id="k0X-S3-NoR"/>
+                <constraint firstItem="aPi-NH-p5C" firstAttribute="leading" secondItem="YYx-9e-Buj" secondAttribute="leading" id="sZQ-ux-Jof"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="bu2-Bc-zu8"/>
+            <size key="customSize" width="273" height="29"/>
+            <connections>
+                <outlet property="girlsCollection" destination="kob-JZ-dl9" id="nLr-nK-6Hz"/>
+            </connections>
+            <point key="canvasLocation" x="-14.492753623188406" y="30.803571428571427"/>
+        </collectionViewCell>
+    </objects>
+</document>

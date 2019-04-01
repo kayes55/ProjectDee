@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DescriptionCell" id="Pbw-Un-Mx2" customClass="DescriptionCell" customModule="ProjectDEE" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jgt-c8-HLQ">
+                        <rect key="frame" x="0.0" y="0.0" width="250" height="250"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AIv-eQ-yUT">
+                                <rect key="frame" x="8" y="5" width="234" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="qTW-Q6-itd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qb3-No-gc8">
+                                <rect key="frame" x="8" y="109.5" width="234" height="31"/>
+                                <fontDescription key="fontDescription" name="Papyrus" family="Papyrus" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RDa-17-436">
+                                <rect key="frame" x="8" y="202" width="234" height="38"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="20"/>
+                                <state key="normal" title="Likes Me"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="qb3-No-gc8" secondAttribute="trailing" constant="8" id="14H-3S-6N4"/>
+                            <constraint firstItem="RDa-17-436" firstAttribute="width" secondItem="qb3-No-gc8" secondAttribute="width" id="2ZO-rN-qlb"/>
+                            <constraint firstAttribute="bottom" secondItem="RDa-17-436" secondAttribute="bottom" constant="10" id="88f-jk-Sqj"/>
+                            <constraint firstAttribute="trailing" secondItem="AIv-eQ-yUT" secondAttribute="trailing" constant="8" id="GTg-cT-145"/>
+                            <constraint firstItem="AIv-eQ-yUT" firstAttribute="top" secondItem="jgt-c8-HLQ" secondAttribute="top" constant="5" id="Pi5-EV-BqY"/>
+                            <constraint firstItem="qb3-No-gc8" firstAttribute="leading" secondItem="jgt-c8-HLQ" secondAttribute="leading" constant="8" id="W9c-oZ-ytK"/>
+                            <constraint firstItem="RDa-17-436" firstAttribute="centerX" secondItem="jgt-c8-HLQ" secondAttribute="centerX" id="bV8-YV-S1Z"/>
+                            <constraint firstItem="qb3-No-gc8" firstAttribute="centerX" secondItem="jgt-c8-HLQ" secondAttribute="centerX" id="hc1-ZC-4Au"/>
+                            <constraint firstItem="qb3-No-gc8" firstAttribute="centerX" secondItem="jgt-c8-HLQ" secondAttribute="centerX" id="pTe-Pd-5Hk"/>
+                            <constraint firstItem="qb3-No-gc8" firstAttribute="centerY" secondItem="jgt-c8-HLQ" secondAttribute="centerY" id="q34-tc-ADh"/>
+                            <constraint firstItem="AIv-eQ-yUT" firstAttribute="leading" secondItem="jgt-c8-HLQ" secondAttribute="leading" constant="8" id="uf6-md-1yY"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="jgt-c8-HLQ" secondAttribute="trailing" id="D2q-UV-KPo"/>
+                <constraint firstItem="jgt-c8-HLQ" firstAttribute="leading" secondItem="Pbw-Un-Mx2" secondAttribute="leading" id="Y7i-Th-yNG"/>
+                <constraint firstAttribute="bottom" secondItem="jgt-c8-HLQ" secondAttribute="bottom" id="Zmd-fg-bBS"/>
+                <constraint firstItem="jgt-c8-HLQ" firstAttribute="top" secondItem="Pbw-Un-Mx2" secondAttribute="top" id="bZO-z2-ofk"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="e0r-df-ciM"/>
+            <connections>
+                <outlet property="descriptionLabel" destination="qb3-No-gc8" id="XHF-0e-8Sm"/>
+                <outlet property="likeButton" destination="RDa-17-436" id="y64-1t-xAG"/>
+                <outlet property="name" destination="AIv-eQ-yUT" id="XVi-tE-nlb"/>
+            </connections>
+            <point key="canvasLocation" x="63.768115942028992" y="77.678571428571431"/>
+        </collectionViewCell>
+    </objects>
+</document>
